@@ -1,0 +1,25 @@
+# Hugo build output
+/public/
+/resources/_gen/
+
+# Hugo caches
+/.hugo_build.lock
+
+# Node modules (if using build tools)
+/node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Ghost export (not needed in repo)
+*.ghost.*.json
+
+# Migration scripts (optional - can remove after migration)
+/scripts/

@@ -1,0 +1,108 @@
+baseURL: "https://kristofferopsahl.com/"
+languageCode: "en-us"
+title: "Kristoffer Opsahl"
+theme: "PaperMod"
+
+minify:
+  minifyOutput: true
+buildDrafts: false
+buildFuture: false
+
+pagination:
+  pagerSize: 10
+enableEmoji: true
+
+taxonomies:
+  tag: tags
+  category: categories
+
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+            - - "\\["
+              - "\\]"
+            - - "$$"
+              - "$$"
+          inline:
+            - - "\\("
+              - "\\)"
+            - - "$"
+              - "$"
+        enable: true
+    renderer:
+      unsafe: true
+  highlight:
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+    style: dracula
+
+params:
+  env: production
+  title: "Kristoffer Opsahl"
+  description: "Software engineer and consultant"
+  keywords: [Blog, Developer, Software Engineering, Kafka, Security, Elixir]
+  author: "Kristoffer Opsahl"
+
+  defaultTheme: auto
+  disableThemeToggle: false
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecialArticleLists: false
+  disableScrollToTop: false
+
+  homeInfoParams:
+    Title: "Kristoffer Opsahl"
+    Content: "Software engineer and consultant based in Oslo. Writing about development, security, and infrastructure."
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/kriops"
+    - name: linkedin
+      url: "https://linkedin.com/in/kristofferopsahl"
+    - name: email
+      url: "mailto:hello@kristofferopsahl.com"
+    - name: rss
+      url: "/index.xml"
+
+  cover:
+    hidden: false
+    hiddenInList: false
+    hiddenInSingle: false
+
+  math: true
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 30
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+privacy:
+  googleAnalytics:
+    anonymizeIP: true
+    respectDoNotTrack: true
