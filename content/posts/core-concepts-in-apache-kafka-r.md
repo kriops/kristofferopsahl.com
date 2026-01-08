@@ -4,9 +4,6 @@ date: 2025-03-06T12:24:04.000Z
 draft: false
 tags: ["Kafka"]
 showToc: true
-cover:
-  image: "/images/covers/kafka-icon.png"
-  alt: "Core Concepts in Apache Kafka®"
 ---
 
 This post is intented to give a high-level description of the basic components of [Apache Kafka](https://kafka.apache.org/)® (Kafka) for someone that is entirely new to it, and that is sufficient to get building. For significantly more detail and nuance, refer to the [official documentation](https://kafka.apache.org/documentation/).

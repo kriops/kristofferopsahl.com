@@ -4,9 +4,6 @@ date: 2025-03-07T09:42:49.000Z
 draft: false
 tags: ["Kafka", "Tutorial"]
 showToc: true
-cover:
-  image: "/images/covers/kafka-icon.png"
-  alt: "From Zero to Hello World with Apache Kafka® in 2025"
 ---
 
 This is a guide on how to run Apache Kafka® locally, and how to start using it. I found the resources I used myself to be needlessly and frustratingly complicated, as well as outdated. Thus my goal is to give a **simple** set of instructions that **works almost everywhere**, regardless of operating system, etc.

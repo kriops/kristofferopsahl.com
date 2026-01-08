@@ -4,9 +4,6 @@ date: 2025-12-07T22:44:43.000Z
 draft: false
 tags: ["AI", "Elixir"]
 showToc: true
-cover:
-  image: "/images/covers/elixir-drop.png"
-  alt: "Coding Agents Need Deterministic Feedback: A Case for Phoenix"
 ---
 
 ## Introduction
