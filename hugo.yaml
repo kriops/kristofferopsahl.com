@@ -81,6 +81,14 @@ params:
 
   math: true
 
+  # Default OG image when post has no cover
+  images:
+    - "/images/default-og.png"
+
+  # Schema.org structured data
+  schema:
+    publisherType: "Person"
+
 menu:
   main:
     - identifier: posts
