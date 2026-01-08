@@ -2,7 +2,7 @@
 title: "Core Concepts in Apache Kafka®"
 date: 2025-03-06T12:24:04.000Z
 draft: false
-tags: ["Java", "#Import 2025-09-14 21:16"]
+tags: ["Java"]
 showToc: true
 cover:
   image: "/images/2025/03/kafka_highres.png"
@@ -16,7 +16,9 @@ This post is intented to give a high-level description of the basic components o
 
 A record **key** denotes a grouping of records; records with the same key will have their order preserved by kafka. Records with different keys may not. A record **value** is the business data of a record. Both keys and values are, strictly speaking, optional. 
 
-💡The purpose of Kafka is largely the handling of records that describe events. The records are passed around, transformed (not modified), and finally used to inform side-effects.## Topics and Partitions
+> 💡 The purpose of Kafka is largely the handling of records that describe events. The records are passed around, transformed (not modified), and finally used to inform side-effects.
+
+## Topics and Partitions
 **Topics** are partially ordered sets of records, consisting of **partitions** which are totally ordered sets of records. Partitions allow parallellism and can be freely added, but not non-destructively removed from a topic. Records in a topic are allocated to partitions based on hashing their keys, meaning all records with identical keys will appear in-order on a single partition. The partition **head** corresponds to its end, and the **tail** corresponds to its beginning.
 
 A record is uniquely identified by its **partition number** and **offset**. In other words, *a record key does not identify a record*. The partition number identifies a partition within a topic, and the offset identifies a location within a partition.
@@ -36,5 +38,7 @@ A deployment of Kafka consists of **broker nodes** organized in a **cluster**. T
 
 **KRaft** (Apache Kafka Raft) is the consensus algorithm used to coordinate responsibilities between different brokers n a cluster.
 
-💡Previously the role of KRaft was fulfilled by ****ZooKeeper****, which required a separate deployment, but this is no longer the case. You can still use ZooKeeper, but it has been deprecated for use with Kafka, and KRaft simultaneously provides simpler usage and better performance.## Summary
+> 💡 Previously the role of KRaft was fulfilled by **ZooKeeper**, which required a separate deployment, but this is no longer the case. You can still use ZooKeeper, but it has been deprecated for use with Kafka, and KRaft simultaneously provides simpler usage and better performance.
+
+## Summary
 This is very much a crude overview, and while I believe it suffices as a starting point, I would recommend everyone read the [official documentation](https://kafka.apache.org/documentation/) at some point.

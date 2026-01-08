@@ -4,9 +4,6 @@ date: 2025-12-07T22:44:43.000Z
 draft: false
 tags: ["LLM", "Elixir"]
 showToc: true
-cover:
-  image: "https://images.unsplash.com/photo-1674027444485-cec3da58eef4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2V8ZW58MHx8fHwxNzY1MTMyMDE2fDA&ixlib=rb-4.1.0&q=80&w=2000"
-  alt: "Coding Agents Need Deterministic Feedback: A Case for Phoenix"
 ---
 
 ## Introduction
@@ -14,12 +11,14 @@ Let me preemptively acknowledge the fact that anyone who reads this probably has
 
 This article will not be as thorough about introducing prerequisite knowledge as some of my earlier writings, so don't hesitate to ask for details or clarifications in the comment section. I would also sincerely appreciate hearing about all disagreements you might have with what I am about to share!
 
-📄This post is written with no LLM-assistance whatsoever. My blog is, and will forever be, completely comprised of my personal thoughts and ideas.## Background
+> 📄 This post is written with no LLM-assistance whatsoever. My blog is, and will forever be, completely comprised of my personal thoughts and ideas.
+
+## Background
 I normally do full-stack work with Java, Spring Boot, and something like React or Angular for the front-end. I tend to avoid ORMs and prefer writing SQL queries by hand. For event-driven features, my go-to tool is Apache Kafka, and I will typically use a rather diverse suite of other auxiliary tools depending on the project. 
 
 I have felt for a while, however, that this little jungle of loosely connected tools has been a severely limiting factor in terms of working with coding agents such as Claude Code. They often struggle with the non-trivial complexities of leaky abstractions, poorly defined boundaries, and reliance on runtime side effects. For example, the prevalence of reflection in most JVM-based projects.
 
-Therefore, when my latest client offered me complete freedom and autonomy with the express intent of maximally leveraging coding agents, I knew it was time to employ a technology I have been studying on the weekends for some time now:[ Phoenix Framework](https://www.phoenixframework.org/) for [Elixir](https://elixir-lang.org/).
+Therefore, when my latest client offered me complete freedom and autonomy with the express intent of maximally leveraging coding agents, I knew it was time to employ a technology I have been studying on the weekends for some time now: [Phoenix Framework](https://www.phoenixframework.org/) for [Elixir](https://elixir-lang.org/).
 
 ## Method
 I have been interested in Phoenix for a while now, and the reasons are not fundamentally related to LLM usage. But it just so happens that the properties that make Phoenix great for developers in the first place also carry significant benefits when working with coding agents and LLMs. 
@@ -28,11 +27,11 @@ The core ideas and hypothesis behind why this is a great technology for coding a
 
 - **Sufficient training data**: Elixir and Phoenix are not as popular as my regular weapons of choice, which are Java and Spring Boot. But they are popular enough that the LLMs have plenty of training data to draw on.
 - **Vertical integration:** Elixir is a compiled language with dynamic but strong typing, and with [HTML + Embedded Elixir](https://hexdocs.pm/phoenix_live_view/Phoenix.Component.html#sigil_H/2) (HEEx), [Phoenix](https://www.phoenixframework.org/), [Phoenix LiveView](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html), and [Ecto](https://hexdocs.pm/ecto/Ecto.html), the compiler 'understands' the entire application from dynamic behavior in the front-end SPA to the structures, constraints, and relationships that are enforced by the database. 
-- **Opinionated: **There is, for the most part, *one* idiomatic way of doing things in Phoenix. This *batteries-included* philosophy is something one might recognize from, e.g., [Django](https://www.djangoproject.com/), and significantly streamlines working with LLMs as there are fewer chances for a coding agent to lose track of, e.g., how the project approaches access control.
+- **Opinionated:** There is, for the most part, *one* idiomatic way of doing things in Phoenix. This *batteries-included* philosophy is something one might recognize from, e.g., [Django](https://www.djangoproject.com/), and significantly streamlines working with LLMs as there are fewer chances for a coding agent to lose track of, e.g., how the project approaches access control.
 - **Terseness:** Phoenix is designed with terseness in mind, which is a major benefit to working with LLMs, where context management is key to obtaining high-quality output.
-- **Elixir is designed for functional programming (FP): **Regardless of FP being at the center of [*bella sancta*](https://en.wikipedia.org/wiki/Religious_war) everywhere, I think it is entirely uncontroversial that immutability together with severe limitations of side effects is an obvious benefit when working with LLMs. This is because large spaces of possible errors are immediately eliminated for free, and because it further facilitates context management.
+- **Elixir is designed for functional programming (FP):** Regardless of FP being at the center of [*bella sancta*](https://en.wikipedia.org/wiki/Religious_war) everywhere, I think it is entirely uncontroversial that immutability together with severe limitations of side effects is an obvious benefit when working with LLMs. This is because large spaces of possible errors are immediately eliminated for free, and because it further facilitates context management.
 
-Simply summarized, we have a strong set of tools that facilitate a holistic approach for the coding agent while simultaneously allowing the agent to autonomously gather comprehensive, **deterministic feedback **to any set of proposed changes.
+Simply summarized, we have a strong set of tools that facilitate a holistic approach for the coding agent while simultaneously allowing the agent to autonomously gather comprehensive, **deterministic feedback** to any set of proposed changes.
 
 Moreover, the Elixir and Phoenix community and ecosystem, including the developers, seem keenly aware of the apparent synergies with coding agents: Fly.io (an excellent provider for cloud infrastructure for Elixir projects) launched a widely hyped product based on pre-configured cloud environments for LLM-based development with Phoenix, called [Phoenix.new](https://phoenix.new/), earlier this year. Furthermore, the AGENTS.md file used to define best practices for the coding agent in Phoenix.new is, as of [Phoenix 1.8.0](https://www.phoenixframework.org/blog/phoenix-1-8-released), included by default in all newly generated Phoenix projects.
 
@@ -61,26 +60,14 @@ I am intentionally being a bit vague because of secrecy requirements. But suffic
 
 In line with the original idea, I have tried to make as much of the codebase accessible to the Elixir compiler. The repository language distribution is as follows:
 
-Language
-Percentage
-
-Elixir
-93.7%
-
-HTML
-5.8%
-
-CSS
-0.2%
-
-JavaScript
-0.2%
-
-Dockerfile
-0.1%
-
-Shell
-0.0%
+| Language | Percentage |
+|----------|------------|
+| Elixir | 93.7% |
+| HTML | 5.8% |
+| CSS | 0.2% |
+| JavaScript | 0.2% |
+| Dockerfile | 0.1% |
+| Shell | 0.0% |
 
 ## Discussion
 Working with coding agents does pose some unique challenges, and I am continuously developing an ever-increasingly sophisticated repertoire of techniques to manage them.
