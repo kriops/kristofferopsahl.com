@@ -2,10 +2,10 @@
 title: "From Zero to Hello World with Apache Kafka® in 2025"
 date: 2025-03-07T09:42:49.000Z
 draft: false
-tags: ["Java"]
+tags: ["Kafka", "Tutorial"]
 showToc: true
 cover:
-  image: "/images/2025/03/IMG_2209.jpeg"
+  image: "/images/placeholders/kafka.svg"
   alt: "From Zero to Hello World with Apache Kafka® in 2025"
 ---
 

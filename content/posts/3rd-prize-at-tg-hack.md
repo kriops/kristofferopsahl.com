@@ -2,7 +2,7 @@
 title: "3rd Prize at TG:HACK"
 date: 2025-04-22T13:05:05.000Z
 draft: false
-tags: ["Lifestyle"]
+tags: ["Security", "CTF"]
 cover:
   image: "/images/2025/04/tghack-2.jpg"
   alt: "3rd Prize at TG:HACK"

@@ -2,7 +2,10 @@
 title: "Using dd to write an .iso to a USB drive"
 date: 2025-09-14T17:16:05.000Z
 draft: false
-tags: ["Linux", "note-to-self"]
+tags: ["Linux", "Note"]
+cover:
+  image: "/images/placeholders/linux.svg"
+  alt: "Using dd to write an .iso to a USB drive"
 ---
 
 `dd` is one of those commands for which I have to look up proper usage every usage because I use it regularly but not often. As such, this is a public note-to-self, which may or may not be useful to the reader. 

@@ -2,10 +2,10 @@
 title: "Core Concepts in Apache Kafka®"
 date: 2025-03-06T12:24:04.000Z
 draft: false
-tags: ["Java"]
+tags: ["Kafka"]
 showToc: true
 cover:
-  image: "/images/2025/03/kafka_highres.png"
+  image: "/images/placeholders/kafka.svg"
   alt: "Core Concepts in Apache Kafka®"
 ---
 

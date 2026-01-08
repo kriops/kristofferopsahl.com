@@ -2,7 +2,7 @@
 title: "My Alacritty, Zellij, and Helix Development Setup"
 date: 2025-07-07T00:20:15.000Z
 draft: false
-tags: ["note-to-self"]
+tags: ["Tooling", "Note"]
 showToc: true
 cover:
   image: "/images/2025/07/Screenshot-from-2025-07-07-02-22-24.png"

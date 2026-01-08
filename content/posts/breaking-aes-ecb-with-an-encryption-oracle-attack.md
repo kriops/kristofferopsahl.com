@@ -2,7 +2,7 @@
 title: "Breaking AES-ECB with an Encryption Oracle Attack"
 date: 2025-04-29T12:42:53.000Z
 draft: false
-tags: ["Python", "Security"]
+tags: ["Security", "Cryptography"]
 math: true
 showToc: true
 cover:

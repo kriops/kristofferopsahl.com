@@ -2,8 +2,11 @@
 title: "Coding Agents Need Deterministic Feedback: A Case for Phoenix"
 date: 2025-12-07T22:44:43.000Z
 draft: false
-tags: ["LLM", "Elixir"]
+tags: ["AI", "Elixir"]
 showToc: true
+cover:
+  image: "/images/placeholders/llm-elixir.svg"
+  alt: "Coding Agents Need Deterministic Feedback: A Case for Phoenix"
 ---
 
 ## Introduction

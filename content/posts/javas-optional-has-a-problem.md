@@ -5,6 +5,9 @@ draft: false
 tags: ["Java"]
 math: true
 showToc: true
+cover:
+  image: "/images/placeholders/java.svg"
+  alt: "Java's Optional has a Problem"
 ---
 
 Java's Optional is over a decade old, and has been subject to intense debate since long before its release. With this in mind, I will argue a particular aspect of its design was a rather unfortunate mistake, and show how it can lead to bugs. I will moreover discuss potential mitigations, and what a better design could have looked like.
