@@ -22,5 +22,6 @@ This blog serves as a place to share technical insights, tutorials, and occasion
 - **Email:** [hello@kristofferopsahl.com](mailto:hello@kristofferopsahl.com)
 - **GitHub:** [github.com/kriops](https://github.com/kriops)
 - **LinkedIn:** [linkedin.com/in/kristofferopsahl](https://linkedin.com/in/kristofferopsahl)
+- **Instagram:** [instagram.com/kriops](https://www.instagram.com/kriops/)
 - **Bluesky:** [bsky.app/profile/kristofferopsahl.com](https://bsky.app/profile/kristofferopsahl.com)
 - **Website:** [kristofferopsahl.com](https://kristofferopsahl.com)

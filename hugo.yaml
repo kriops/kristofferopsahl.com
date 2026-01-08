@@ -74,6 +74,8 @@ params:
       url: "https://github.com/kriops"
     - name: linkedin
       url: "https://linkedin.com/in/kristofferopsahl"
+    - name: instagram
+      url: "https://www.instagram.com/kriops/"
     - name: bluesky
       url: "https://bsky.app/profile/kristofferopsahl.com"
     - name: email
