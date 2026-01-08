@@ -6,7 +6,7 @@ tags: ["Java"]
 math: true
 showToc: true
 cover:
-  image: "/images/placeholders/java.svg"
+  image: "/images/covers/duke.png"
   alt: "Java's Optional has a Problem"
 ---
 

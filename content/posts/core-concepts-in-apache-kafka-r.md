@@ -5,7 +5,7 @@ draft: false
 tags: ["Kafka"]
 showToc: true
 cover:
-  image: "/images/placeholders/kafka.svg"
+  image: "/images/covers/kafka-icon.png"
   alt: "Core Concepts in Apache Kafka®"
 ---
 

@@ -5,7 +5,7 @@ draft: false
 tags: ["Kafka", "Tutorial"]
 showToc: true
 cover:
-  image: "/images/placeholders/kafka.svg"
+  image: "/images/covers/kafka-icon.png"
   alt: "From Zero to Hello World with Apache Kafka® in 2025"
 ---
 

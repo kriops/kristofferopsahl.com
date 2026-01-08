@@ -5,7 +5,7 @@ draft: false
 tags: ["AI", "Elixir"]
 showToc: true
 cover:
-  image: "/images/placeholders/llm-elixir.svg"
+  image: "/images/covers/elixir-drop.png"
   alt: "Coding Agents Need Deterministic Feedback: A Case for Phoenix"
 ---
 

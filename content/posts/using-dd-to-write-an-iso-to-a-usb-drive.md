@@ -4,7 +4,7 @@ date: 2025-09-14T17:16:05.000Z
 draft: false
 tags: ["Linux", "Note"]
 cover:
-  image: "/images/placeholders/linux.svg"
+  image: "/images/covers/tux.png"
   alt: "Using dd to write an .iso to a USB drive"
 ---
 
