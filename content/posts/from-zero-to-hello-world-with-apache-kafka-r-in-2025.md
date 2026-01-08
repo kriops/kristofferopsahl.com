@@ -1,4 +1,5 @@
 ---
+aliases: ["/from-zero-to-hello-world-with-apache-kafka-r-in-2025/"]
 title: "From Zero to Hello World with Apache Kafka® in 2025"
 date: 2025-03-07T09:42:49.000Z
 draft: false

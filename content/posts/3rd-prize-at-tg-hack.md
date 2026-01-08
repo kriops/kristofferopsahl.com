@@ -1,4 +1,5 @@
 ---
+aliases: ["/3rd-prize-at-tg-hack/"]
 title: "3rd Prize at TG:HACK"
 date: 2025-04-22T13:05:05.000Z
 draft: false

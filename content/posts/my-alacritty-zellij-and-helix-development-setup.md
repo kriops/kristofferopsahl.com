@@ -1,4 +1,5 @@
 ---
+aliases: ["/my-alacritty-zellij-and-helix-development-setup/"]
 title: "My Alacritty, Zellij, and Helix Development Setup"
 date: 2025-07-07T00:20:15.000Z
 draft: false

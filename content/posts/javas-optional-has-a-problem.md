@@ -1,4 +1,5 @@
 ---
+aliases: ["/javas-optional-has-a-problem/"]
 title: "Java's Optional has a Problem"
 date: 2025-03-25T13:17:55.000Z
 draft: false

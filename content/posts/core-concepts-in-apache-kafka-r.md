@@ -1,4 +1,5 @@
 ---
+aliases: ["/core-concepts-in-apache-kafka-r/"]
 title: "Core Concepts in Apache Kafka®"
 date: 2025-03-06T12:24:04.000Z
 draft: false

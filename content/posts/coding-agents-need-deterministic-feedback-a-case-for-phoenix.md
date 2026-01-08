@@ -1,4 +1,5 @@
 ---
+aliases: ["/coding-agents-need-deterministic-feedback-a-case-for-phoenix/"]
 title: "Coding Agents Need Deterministic Feedback: A Case for Phoenix"
 date: 2025-12-07T22:44:43.000Z
 draft: false

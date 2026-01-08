@@ -1,4 +1,5 @@
 ---
+aliases: ["/breaking-aes-ecb-with-an-encryption-oracle-attack/"]
 title: "Breaking AES-ECB with an Encryption Oracle Attack"
 date: 2025-04-29T12:42:53.000Z
 draft: false

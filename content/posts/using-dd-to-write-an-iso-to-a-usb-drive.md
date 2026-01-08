@@ -1,4 +1,5 @@
 ---
+aliases: ["/using-dd-to-write-an-iso-to-a-usb-drive/"]
 title: "Using dd to write an .iso to a USB drive"
 date: 2025-09-14T17:16:05.000Z
 draft: false
