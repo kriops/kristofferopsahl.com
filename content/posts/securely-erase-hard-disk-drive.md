@@ -1,6 +1,6 @@
 ---
 title: "How to securely erase a Hard-Disk Drive"
-date: 2026-04-03T21:42:17.000Z
+date: 2026-04-03
 draft: false
 tags: ["Linux", "Note"]
 ---
