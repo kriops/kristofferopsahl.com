@@ -7,10 +7,7 @@ tags: ["AI", "Elixir"]
 showToc: true
 ---
 
-## Introduction
 Let me preemptively acknowledge the fact that anyone who reads this probably has some level of LLM fatigue from social media. This article is about maximizing the potential benefit from LLM usage in the context of software engineering, which I (as one might infer from the title), in my humble opinion, have been fairly successful at. I will share the ideas with which I have found success, and I will leave the reader to determine their virtues and vices.
-
-This article will not be as thorough about introducing prerequisite knowledge as some of my earlier writings, so don't hesitate to ask for details or clarifications in the comment section. I would also sincerely appreciate hearing about all disagreements you might have with what I am about to share!
 
 > 📄 This post is written with no LLM-assistance whatsoever. My blog is, and will forever be, completely comprised of my personal thoughts and ideas.
 
