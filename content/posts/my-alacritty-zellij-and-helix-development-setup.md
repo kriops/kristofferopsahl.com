@@ -80,7 +80,7 @@ brew install helix zellij
 
 I mostly tweak font size and themes. Though I provide my dotfiles in full, they are mostly optional.
 
-#### Alacritty
+### Alacritty
 
 If you are using **Windows**, you must configure Alacritty to launch the correct shell, as it defaults to PowerShell.
 
@@ -111,7 +111,7 @@ import = [
 
 Setting the shell to "Debian" on Linux or macOS breaks the config, but appending the Linux/macOS-file to the Windows-file causes no issues.
 
-#### Helix
+### Helix
 
 Consider "base16_transparent" if you would rather not download or configure themes for Alacritty and Zellij. Use `:theme` in Helix to preview the included themes.
 
@@ -121,7 +121,7 @@ theme = "rose_pine"
 
 *~/.config/helix/config.toml*
 
-#### Zellij
+### Zellij
 
 Zellij ships a large default configuration file.
 

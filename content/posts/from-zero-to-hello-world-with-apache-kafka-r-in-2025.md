@@ -9,7 +9,7 @@ showToc: true
 
 This is a guide on how to run Apache Kafka® locally, and how to start using it. I found the resources I used myself to be needlessly and frustratingly complicated, as well as outdated. Thus my goal is to give a **simple** set of instructions that **works almost everywhere**, regardless of operating system, etc.
 
-### Structure
+## Structure
 The guide has three parts.
 
 - Install podman and use it to start an Apache Kafka®-cluster
@@ -18,7 +18,7 @@ The guide has three parts.
 
 > 💡 If the nomenclature specific to Apache Kafka® is confusing, I have written a [short explanation of the core concepts](https://kristofferopsahl.com/core-concepts-in-apache-kafka-r/).
 
-### Requirements
+## Requirements
 If you lack anything you can follow the guide up until the point it is needed. The requirements are, in order:
 
 - Podman or Docker

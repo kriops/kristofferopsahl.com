@@ -73,7 +73,7 @@ Working with coding agents does pose some unique challenges, and I am continuous
 ### Guard Rails
 First and foremost, coding agents are nothing but LLMs in fancy wrapping paper, i.e., [stochastic parrots](https://en.wikipedia.org/wiki/Stochastic_parrot) that are prone to 'hallucinate.' It is important to defend against this [in depth](https://en.wikipedia.org/wiki/Defense_in_depth_(computing)):
 
-#### Natural language instructions
+#### Natural Language Instructions
 Since I am using Claude Code, I can guide it by adding instructions to a special file named `CLAUDE.md` at the root of the repository (though there appears to be a slow convergence on using `AGENTS.md` for other agents). Moreover, there is a special syntax to refer to other files with further instructions from `CLAUDE.md`, so you can create separate files for instructions that are only relevant in some contexts. This reduces the risk of contradictions, implied or otherwise. 
 
 Utilizing this feature, I have been able to preserve the original `AGENTS.md` that Phoenix generates with new projects, which prevents the description of best practices from morphing or diluting over time:
@@ -102,14 +102,14 @@ With the dawn of coding agents, we have also gained the ability to use it for **
 - Unless the proposed change is absolutely humongous, the code review agent will spend **significantly less of its context budget on the code base** compared to the actual coding agent. This means it is significantly more likely to catch violations of instructions in, e.g., `AGENTS.md`. 
 - The code review agent produces a natural language report with detailed and concrete suggestions for improvement, meaning **it can be passed as-is back to the coding agent** with excellent results more often than not.
 
-### Recursion is King
+### Recursion Is King
 If you haven't caught on by now, I am a massive proponent of functional programming. It should therefore come as no surprise that I rely heavily on what are essentially recursive instructions to the coding agent. It often goes something like this:
 
 > Use extended thinking and planning mode to exhaustively address the issues raised in the latest PR comment. Repeat until no issues of medium importance or higher remain.The trick is that the 'latest PR comment' is an agentic code review that is automatically triggered upon submitting a change to the code base. This means that the agent will keep itself busy by iterating on the changes until the specialized critic is more or less happy. Thinking and planning mode is invoked to help the coding agent compartmentalize different points of feedback and address them one at a time.
 
 After this process has concluded, I will, of course, perform a manual review as well. But I have found it highly effective, in combination with a well-developed `CLAUDE.md`, at eliminating trivial errors and having to tediously correct the same mistakes over and over.
 
-### CLI Tooling is Key
+### CLI Tooling Is Key
 Simply put, if your agent can access server logs, GitHub issues, email conversations, and so on and so forth, it will be able to do more for you autonomously. That being said, [**DO NOT** give your coding agent the power to ruin your entire year](https://tech.yahoo.com/ai/articles/ai-vibe-coding-agent-deleted-211500354.html?guccounter=1&guce_referrer=aHR0cHM6Ly9rYWdpLmNvbS8&guce_referrer_sig=AQAAAC3M0a_ZR6COvuJ25P6XMO0LplGFOYR865N--benZDImA2gNTQknP696oCuZBQHeeYa2LR8vs7mW6pDy1cBiyCGdaleOrVV1DG0dK-IQ7NGQfEQDFK2QxOx_fev4HI05QPT2nEk-hndrGwVhA3qcyJHN_remnTsxYGEXnY5N7UHS). Use scoped API keys, virtualized environments, natural language instructions, backups, and other prophylactic measures to manage agentic risk. 
 
 ## Conclusion

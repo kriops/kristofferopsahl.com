@@ -1,6 +1,6 @@
 ---
 aliases: ["/javas-optional-has-a-problem/"]
-title: "Java's Optional has a Problem"
+title: "Java's Optional Has a Problem"
 date: 2025-03-25T13:17:55.000Z
 draft: false
 tags: ["Java"]
@@ -207,7 +207,7 @@ class Example {
 
 $\text{Null}$ has a multitude of meanings across various contexts, e.g. *missing value, zero, undefined*. The developer in the example above was forced to explicitly and unambiguously declare their interpretation of a $\text{null}$-value because Alt-Java does not *assume* `Optional[null]` should always collapse to `Optional.empty`. In our current reality, however, Java's Optional makes handling of $\text{null}$-values *implicit*, which further makes it difficult to infer from code alone whether the default behavior has been actively considered.
 
-### Improving the design
+### Improving the Design
 
 The existing design is well established at this point, and so identifying defensive patterns is more pragmatic than lamenting a decade's old decisions. Taking a principled look still, I believe there are two mutually exclusive avenues to improvements: Making it a monad, or modifying language.
 

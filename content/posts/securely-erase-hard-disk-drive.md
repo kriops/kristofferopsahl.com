@@ -1,5 +1,5 @@
 ---
-title: "How to securely erase a Hard-Disk Drive"
+title: "How to Securely Erase a Hard-Disk Drive"
 date: 2026-04-03
 draft: false
 tags: ["Linux", "Note"]
@@ -7,12 +7,12 @@ tags: ["Linux", "Note"]
 
 Hard-disk drives (HDDs) should be securely erased before being sold or recycled. This is a public note-to-self on how to achieve this in a simple and timely manner. 
 
-### Prerequisites
+## Prerequisites
 The `shred` binary, which to my knowledge is included in all major Linux distributions. Moreover, you need a HDD which will be subject to secure erasure. 
 
 **You can NOT use `shred` to SECURELY erase solid-state drives (SSDs) or so-called non-volatile memory express (NVMe) devices.** This is due to physical differences in the mechanism used to store information.
 
-### Securely Erasing the HDD
+## Securely Erasing the HDD
 
 Shred works by overwriting a target file or disk with noise, then optionally writing zero-bytes to obfuscate the erasure:
 
